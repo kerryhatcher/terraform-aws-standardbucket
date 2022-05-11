@@ -1,7 +1,3 @@
-provider "aws" {
-  region = var.Region
-}
-
 resource "aws_s3_bucket" "standard_bucket" {
   bucket   = var.Name
 }
