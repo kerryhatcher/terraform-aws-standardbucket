@@ -30,7 +30,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "standard_bucket" 
 
 
 resource "aws_s3_bucket_public_access_block" "standard_bucket" {
-  bucket = aws_s3_bucket.destination.id
+  bucket = aws_s3_bucket.standard_bucket.id
 
   block_public_acls       = true
   block_public_policy     = true
